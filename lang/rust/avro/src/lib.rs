@@ -874,6 +874,8 @@ pub use schema::{AvroSchema, Schema};
 pub use ser::to_value;
 pub use util::{max_allocation_bytes, set_serde_human_readable};
 pub use uuid::Uuid;
+pub use ser::{avro_serialize_bytes, avro_serialize_fixed, to_value};
+pub use util::max_allocation_bytes;
 pub use writer::{
     to_avro_datum, to_avro_datum_schemata, GenericSingleObjectWriter, SpecificSingleObjectWriter,
     Writer,
