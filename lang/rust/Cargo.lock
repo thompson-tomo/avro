@@ -83,10 +83,10 @@ dependencies = [
  "pretty_assertions",
  "quad-rand",
  "rand",
+ "ref_thread_local",
  "regex-lite",
  "rstest",
  "serde",
- "serde-byte-array",
  "serde_bytes",
  "serde_json",
  "serial_test",
@@ -1010,6 +1010,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "ref_thread_local"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a0d51660a68078997855ba5602f73ab3a5031bd7ad480a9d4c90fbbf04e1fff0"
+
+[[package]]
 name = "regex"
 version = "1.10.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1147,19 +1153,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "serde-byte-array"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "63213ee4ed648dbd87db6fa993d4275b46bfb4ddfd95b3756045007c2b28f742"
-dependencies = [
- "serde",
-]
-
-[[package]]
 name = "serde_bytes"
-version = "0.11.9"
+version = "0.11.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "416bda436f9aab92e02c8e10d49a15ddd339cea90b6e340fe51ed97abb548294"
+checksum = "8b8497c313fd43ab992087548117643f6fcd935cbf36f176ffda0aacf9591734"
 dependencies = [
  "serde",
 ]
